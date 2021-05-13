@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:visibility="visible"
+    tools:context=".PresentacionActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideVipager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher_round"
+        android:foregroundGravity="center">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layoutSlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            style="@style/Widget.AppCompat.ActionButton.Overflow"
+            android:textSize="14dp"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:enabled="false"
+            android:text="Atrás" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            style="@style/Widget.AppCompat.ActionButton.Overflow"
+            android:textSize="14dp"
+            android:text="Siguiente" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

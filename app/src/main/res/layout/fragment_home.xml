@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <include android:id="@+id/type_user_home"
+        android:visibility="gone"
+        layout="@layout/type_user"/>
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:background="@drawable/btn_color_blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/btn_perfiles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_updateuser"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Perfil"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:background="@drawable/btn_color_blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/btn_fincas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_rgistrofincas"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Mis fincas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:background="@drawable/btn_color_blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/btn_externos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_relaciones"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Vincular Externos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:background="@drawable/btn_color_blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/btn_historial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_buscar"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Historial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:background="@drawable/btn_color_blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/btn_procesos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_app"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Crear Proceso"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

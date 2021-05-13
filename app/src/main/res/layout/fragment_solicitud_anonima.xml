@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudAnonimaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cargar imagen de la camara del dispositivo"/>
+            <ImageView
+                android:id="@+id/img_movil"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_camara"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_redondo"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btn_img_movil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.CompoundButton.Switch"
+                        android:src="@drawable/ic_camara"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/myrect"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cargar imagen termográfica"/>
+            <ImageView
+                android:id="@+id/img_termografica"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_camara"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_redondo"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btn_img_termog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.CompoundButton.Switch"
+                        android:src="@drawable/ic_camara"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/myrect"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_color_blanco"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_cargar_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Cargar" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

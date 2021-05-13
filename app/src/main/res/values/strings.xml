@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">machine2021</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_user">Tipo de usuario</string>
+    <string name="my_farms">Mis Fincas</string>
+    <string name="create_farms">Crear nueva Finca</string>
+</resources>

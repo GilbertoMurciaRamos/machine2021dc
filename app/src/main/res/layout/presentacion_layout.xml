@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imgSlide"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_compania"/>
+    <TextView
+        android:id="@+id/txtSlide"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtSlideD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:text="asdasd asdasd asdad asdasd asdasd ad asdasds "
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>
